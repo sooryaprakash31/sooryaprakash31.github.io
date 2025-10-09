@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soorya Prakash - Personal Portfolio</title>
+    <meta name="description" content="Personal portfolio of Soorya Prakash - Software Engineer">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- Open Graph / Linkedin Preview -->
+    <meta property="og:title" content="Soorya Prakash - Portfolio">
+    <meta property="og:description" content="Personal portfolio of Soorya Prakash - Software Engineer">
+    <meta property="og:image" content="assets/profile.png">
+    <meta property="og:url" content="https://sooryaprakash31.github.io/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Soorya Prakash - Portfolio">
+    <meta name="twitter:description" content="Personal portfolio of Soorya Prakash - Software Engineer">
+    <meta name="twitter:image" content="assets/profile.png">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-title">
+                <a href="#" class="navbar-logo">
+                    <span class="logo-icon">💻</span>
+                    <span class="site-name">sooryaprakash</span>
+                </a>
+            </div>
+            <nav class="navbar-menu">
+                <a href="#about" class="nav-link" data-tab="about">About</a>
+                <a href="#experience" class="nav-link" data-tab="experience">Experience</a>
+<!--                <a href="#projects" class="nav-link" data-tab="projects">Projects</a>-->
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section id="about" class="tab-content active">
+            <div class="hero">
+                <div class="hero-content">
+                    <img src="assets/profile.jpg" alt="Your Name" class="profile-image">
+                    <div class="hero-text">
+                        <h1>Hey, I'm Soorya!</h1>
+                        <p class="hero-description">
+                            Software Engineer | Specializing in Machine Learning & Agentic AI systems.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="mailto:sooryaprakash.r31@gmail.com" class="contact-link" target="_blank" rel="noopener" aria-label="Email">
+                                <img src="assets/icons/mail.svg" alt="Email" class="contact-icon">
+                            </a>
+                            <a href="https://linkedin.com/in/sooryaprakash31" class="contact-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <img src="assets/icons/linkedin.svg" alt="Linkedin" class="contact-icon">
+                            </a>
+                            <a href="https://github.com/sooryaprakash31" class="contact-link" target="_blank" rel="noopener" aria-label="Github">
+                                <img src="assets/icons/github.svg" alt="Github" class="contact-icon-github">
+                            </a>
+
+                            <!--                            <a href="#projects" class="button secondary" data-tab="projects">View my work</a>-->
+                            <a href="assets/resume.pdf" class="button primary" target="_blank">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Over the past four years, I’ve developed systems that help machines reason, plan, and act, from scalable ML pipelines and real-time workflows to backend architectures and APIs.
+                            I also work across the full software stack, optimizing data flows and writing maintainable, high-performance code.
+                        </p>
+                        <p>
+                            When I’m not coding, I’m usually watching movies (I’m a bit of a cinephile), exploring new recipes,
+                            or spending time on photography, badminton, books, and anime.
+                        </p>
+                        <p>
+                            I’m always excited to connect with like-minded folks, so feel free to reach out!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="tab-content">
+            <div class="content-section">
+                <h2>Professional Journey</h2>
+
+                <!-- Work Experience -->
+                <div class="experience-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">💼</span>
+                        Work Experience
+                    </h3>
+                    <div class="timeline">
+                        <!-- Experience items will be dynamically populated -->
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="experience-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🎓</span>
+                        Education
+                    </h3>
+                    <div class="timeline">
+                        <!-- Education items will be dynamically populated -->
+                    </div>
+                </div>
+
+                <!-- Skills & Technologies -->
+                <div class="experience-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🛠️</span>
+                        Skills
+                    </h3>
+                    <div class="skills-grid">
+                    </div>
+                </div>
+
+                <!-- Achievements & Certifications -->
+                <div class="experience-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🏆</span>
+                        Achievements & Certifications
+                    </h3>
+                    <div class="achievements-grid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+<!--        <section id="projects" class="tab-content">-->
+<!--            <div class="content-section">-->
+<!--                <h2>Projects</h2>-->
+<!--                <div class="projects-grid">-->
+<!--                    &lt;!&ndash; Project items will be dynamically populated &ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="project-card">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="assets/project1.jpg" alt="Project 1" class="project-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="project-content">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <h3>Project Name 1</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <p>Brief description of the project and technologies used.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="project-tech">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <span class="tech-tag">React</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <span class="tech-tag">Node.js</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="project-links">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="project-link">Live Demo</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="#" class="project-link">GitHub</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash; Add more project cards as needed &ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Soorya Prakash. Vibecoded with AI ❤️</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>
+
