@@ -135,11 +135,17 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow-anchor: none; /* Prevents automatic scroll adjustments */
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: var(--color-background);
     color: var(--color-text);
+    overflow-anchor: none;
 }
 
 /* Typography */
@@ -868,8 +874,15 @@ a:hover {
     }
 
     .profile-image {
-        width: 100px;
-        height: 100px;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        transition: all 0.6s ease;
+    }
+
+    .profile-image.scrolled {
+        width: 125px;
+        height: 125px;
     }
 
     .hero-buttons {

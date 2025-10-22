@@ -1,3 +1,17 @@
+// Prevent auto-scroll on page load
+if (window.location.hash) {
+    window.history.replaceState(null, null, ' ');
+    window.scrollTo(0, 0);
+}
+
+// prevent default scroll behavior
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 0);
+});
+
+
 // Main JavaScript functionality for the portfolio
 class Portfolio {
     constructor() {
@@ -388,6 +402,15 @@ class ContentManager {
 document.addEventListener('DOMContentLoaded', () => {
     new Portfolio();
     new ContentManager();
+});
+
+window.addEventListener('scroll', function() {
+    const profileImage = document.querySelector('.profile-image');
+    if (window.scrollY > 75) {
+        profileImage.classList.add('scrolled');
+    } else {
+        profileImage.classList.remove('scrolled');
+    }
 });
 
 // Export for potential module use
